@@ -363,9 +363,14 @@ img {
   border-radius: 50%;
   background-color: var(--white-color);
   cursor: pointer;
+  transition-property: fill;
+  transition-duration: var(--main-transition-duration);
+  transition-timing-function: var(--main-transtition-timing-function);
+  
 }
 
-.modal-exit-button:hover {
+.modal-exit-button:hover,
+.modal-exit-button:focus {
   fill: var(--accent-color);
 }
 
