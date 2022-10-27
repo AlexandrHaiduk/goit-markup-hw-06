@@ -108,7 +108,7 @@ img {
 }
 
 .nav-main .link::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 100%;
@@ -173,7 +173,10 @@ img {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(var(--hero-background-color), var(--hero-background-color)),
+  background-image: linear-gradient(
+      var(--hero-background-color),
+      var(--hero-background-color)
+    ),
     url(../images/hero-background-image.jpg);
   background-color: var(--hero-background-color);
   background-position: center;
@@ -238,34 +241,38 @@ img {
 .modal-title {
   margin-bottom: 12px;
   font-weight: 700;
-font-size: 20px;
-line-height: calc(23/20);
-text-align: center;
-letter-spacing: 0.03em;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  text-align: center;
+  letter-spacing: 0.03em;
 
-color: var(--main-text-color);
-
+  color: var(--main-text-color);
 }
 
 .modal-form {
   display: flex;
   flex-direction: column;
   font-size: 12px;
-  line-height: calc(14/12);
+  line-height: calc(14 / 12);
   letter-spacing: 0.01em;
-  color: var(--secondary-text-color);
+  color: var(--main-text-color);
   gap: 10px;
 }
-.modal-label-thumb {
+.modal-label {
   position: relative;
-  color: var(--main-text-color);
+}
+
+.modal-label-name {
+  color: var(--secondary-text-color);
+}
+
+.modal-input-icon {
   transition-property: color;
   transition-duration: var(--main-transition-duration);
   transition-timing-function: var(--main-transtition-timing-function);
-
 }
 
-.modal-label-thumb:focus-within {
+.modal-label:focus-within .modal-input-icon {
   color: var(--accent-color);
 }
 
@@ -289,10 +296,10 @@ color: var(--main-text-color);
 
 .modal-input-icon {
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 15px;
-  fill: currentColor;
   transform: translateY(-50%);
+  fill: currentColor;
 }
 
 .modal-checkbox-label {
@@ -314,7 +321,6 @@ color: var(--main-text-color);
   border: 1px solid var(--main-text-color);
   border-radius: 4px;
   margin-right: 7px;
-  
 }
 
 .modal-checkbox-input:checked + .modal-checkbox-icon {
@@ -322,7 +328,8 @@ color: var(--main-text-color);
   background-color: var(--accent-color);
   background-position: center;
   background-origin: border-box;
-  border: none; 
+  background-size: cover;
+  border: none;
 }
 
 .modal-conditions {
@@ -357,7 +364,6 @@ color: var(--main-text-color);
   background-color: var(--white-color);
   cursor: pointer;
 }
-
 
 .modal-exit-button:hover {
   fill: var(--accent-color);
@@ -566,7 +572,7 @@ color: var(--main-text-color);
 }
 
 .regular-customers-title {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -641,7 +647,7 @@ color: var(--main-text-color);
 
 .footer-social-title {
   margin-bottom: 20px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -657,17 +663,16 @@ color: var(--main-text-color);
 .footer-thumb-subscribe {
   margin-left: auto;
   padding-top: 12px;
-
 }
 
 .footer-thumb-subscribe-title {
   margin-bottom: 20px;
-font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
 }
 
 .footer-form-subscribe-email {
@@ -685,16 +690,14 @@ color: var(--white-color);
 }
 .footer-form-subscribe-email:focus {
   outline: none;
-  border: 1px solid var(--accent-color)
+  border: 1px solid var(--accent-color);
 }
-
 
 .footer-form-subscribe-email::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
 }
-
 
 .footer-form-subscribe-button {
   width: 200px;
@@ -706,7 +709,6 @@ color: var(--white-color);
   margin-left: 10px;
   fill: var(--white-color);
 }
-
 
 /* ----------------!!!PORTFOLIO.HTML!!!------------------ */
 
