@@ -337,8 +337,10 @@ img {
 }
 
 .text-area {
+  height: 120px;
   resize: none;
   padding-left: 16px;
+
 }
 
 .modal-conditions {
@@ -595,6 +597,7 @@ img {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer .item {
@@ -647,7 +650,6 @@ img {
 
 .footer-thumb-social {
   margin-left: 95px;
-  padding-top: 12px;
 }
 
 .footer-social-title {
@@ -667,7 +669,6 @@ img {
 
 .footer-thumb-subscribe {
   margin-left: auto;
-  padding-top: 12px;
 }
 
 .footer-thumb-subscribe-title {
